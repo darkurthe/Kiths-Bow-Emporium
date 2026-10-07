@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameItemTypes>
+
+    <!-- 1. THE TRUE-STRING -->
+    <GameItemType InternalName="KITH_TrueString">
+        <DisplayName>The True-String</DisplayName>
+        <Description>A perfectly balanced bow enchanted to guide arrows directly to their target. It is virtually impossible to miss.</Description>
+        
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponClass>Bow</WeaponClass>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HeroOnly>0</HeroOnly>
+        <IsTreasure>1</IsTreasure>
+        <ShopValue>900</ShopValue>
+        <Likelihood>50</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <CustomizationPointCost>0</CustomizationPointCost>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>2</Attribute>
+        </Prereq>
+        
+        <ArtDef>ArtDef_TrueString</ArtDef>
+        <GameItemTypeArtDef InternalName="ArtDef_TrueString">
+            <GameItemTypeModelPack InternalName="TrueString_default">
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <IconFile>Gfx\Items\W_Longbow_Masterwork_Icon_01.dds</IconFile>
+                <AttackSFX>Hit_Bow_01</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+                <SoundPack>SoundPack_Bow</SoundPack>
+                <GameItemTypeModel>
+                    <ModelFile>FBXExport\Meshes\W_Longbow_01.fbx</ModelFile>
+                    <Texture_All>FBXExport\Meshes\W_Longbow_Masterwork_01.sdf</Texture_All>
+                    <Attachment>hand_left_Lcf</Attachment>
+                    <Scale>1</Scale>
+                </GameItemTypeModel>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Armor\K_ArcherQuiver_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Armor\K_Female_Armor_Archer_Texture_01.dds</Texture_All>
+                    <Attachment>back_Lcf</Attachment>
+                </GameItemTypeModel>
+                <ProjectileModel>W_Arrow_Projectile_01.hkb</ProjectileModel>
+                <ImpactEffect>Bloody_OnHit</ImpactEffect>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockRangedAction</Attribute>
+            <StrVal>BowAttack</StrVal>
+            <StrVal>BowAttack_Basic</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>75</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Range</StrVal>
+            <Value>7</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <TacticalRange>8</TacticalRange>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+    </GameItemType>
+
+    <!-- 2. THE PRISMATIC BOW -->
+    <GameItemType InternalName="KITH_PrismaticBow">
+        <DisplayName>The Prismatic Bow</DisplayName>
+        <Description>A dazzling weapon of shifting colors, unleashing a chaotic mix of elemental energies with every shot.</Description>
+        
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponClass>Bow</WeaponClass>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HeroOnly>0</HeroOnly>
+        <IsTreasure>1</IsTreasure>
+        <ShopValue>900</ShopValue>
+        <Likelihood>25</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <CustomizationPointCost>0</CustomizationPointCost>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>3</Attribute>
+        </Prereq>
+        
+        <ArtDef>ArtDef_PlasmaticBow</ArtDef>
+        <GameItemTypeArtDef InternalName="ArtDef_PlasmaticBow">
+            <GameItemTypeModelPack InternalName="PrismaticBow_default">
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <IconFile>Gfx\Items\W_Longbow_Ignys_Icon_01.dds</IconFile>
+                <AttackSFX>Hit_Bow_01</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <OnHitParticleName>A_LightningHammer_Particle</OnHitParticleName>
+                <SoundPack>SoundPack_Bow</SoundPack>
+                <GameItemTypeModel>
+				  <ModelFile>Gfx\HKB\Weapons\W_Longbow_Guiding_01.hkb</ModelFile>
+				  <Texture_All>Gfx\HKB\Armor\FE_Weapons_02.png</Texture_All>
+				  <Attachment>hand_Left_Lcf</Attachment>
+				  <Color_All>232,158,28</Color_All>
+                </GameItemTypeModel>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Armor\K_ArcherQuiver_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Armor\K_Female_Armor_Archer_Texture_01.dds</Texture_All>
+                    <Attachment>back_Lcf</Attachment>
+                </GameItemTypeModel>
+                <ProjectileModel>W_Arrow_Projectile_01.hkb</ProjectileModel>
+                <ImpactEffect>A_LightningHammer_Particle</ImpactEffect>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockRangedAction</Attribute>
+            <StrVal>BowAttack</StrVal>
+            <StrVal>BowAttack_Freezing</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Poison</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Range</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-3</Value>
+        </GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_MagicResist</StrVal>
+			<Value>10</Value>
+		</GameModifier>
+        <TacticalRange>8</TacticalRange>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+    </GameItemType>
+
+    <!-- 3. ASSASSIN'S SHADOW -->
+    <GameItemType InternalName="KITH_AssassinsShadow">
+        <DisplayName>Assassin's Shadow</DisplayName>
+        <Description>A sinister recurve bow, with whisps of death magic bellowing form it. Its dark frame hides the wielder from sight.</Description>
+        
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponClass>Bow</WeaponClass>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HeroOnly>0</HeroOnly>
+        <IsTreasure>1</IsTreasure>
+        <ShopValue>900</ShopValue>
+        <Likelihood>50</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <CustomizationPointCost>0</CustomizationPointCost>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>3</Attribute>
+        </Prereq>
+        
+        <ArtDef>ArtDef_AssassinsShadow</ArtDef>
+        <GameItemTypeArtDef InternalName="ArtDef_AssassinsShadow">
+            <GameItemTypeModelPack InternalName="AssassinsShadow_default">
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <IconFile>Gfx\Items\W_Shortbow_Hunters_Icon_01.png</IconFile>
+                <AttackSFX>Hit_Bow_01</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+                <SoundPack>SoundPack_Bow</SoundPack>
+				<GameItemTypeModel>
+				  <ModelFile>Gfx\HKB\Weapons\W_Longbow_Shocking_01.hkb</ModelFile>
+				  <Texture_All>Gfx\HKB\Armor\FE_Weapons_02.png</Texture_All>
+				  <Attachment>hand_Left_Lcf</Attachment>
+				  <Color_All>232,158,28</Color_All>
+				</GameItemTypeModel>
+				<GameItemTypeModel>
+				  <ModelFile>Gfx\HKB\Armor\K_ArcherQuiver_01.hkb</ModelFile>
+				  <Texture_All>Gfx\HKB\Armor\K_Female_Armor_Archer_Texture_01.dds</Texture_All>
+				  <Attachment>back_Lcf</Attachment>
+				  <Color_All>232,158,28</Color_All>				
+				</GameItemTypeModel>
+                <ProjectileModel>W_Arrow_Projectile_01.hkb</ProjectileModel>
+                <ImpactEffect>Bloody_OnHit</ImpactEffect>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockRangedAction</Attribute>
+            <StrVal>BowAttack</StrVal>
+            <StrVal>BowAttack_Toxic</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ArmorPierce</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Range</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-3</Value>
+        </GameModifier>
+        <TacticalRange>8</TacticalRange>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+    </GameItemType>
+
+    <!-- 4. MEADOW HUNTER'S BOW -->
+    <GameItemType InternalName="KITH_MeadowHunterBow">
+        <DisplayName>Meadow Hunter's Bow</DisplayName>
+        <Description>A beautifully carved, lightweight bow designed for taking down wild game. Quick and reliable.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponClass>Bow</WeaponClass>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HeroOnly>0</HeroOnly>
+        <IsTreasure>1</IsTreasure>
+        <ShopValue>900</ShopValue>
+        <Likelihood>50</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <CustomizationPointCost>0</CustomizationPointCost>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>2</Attribute>
+        </Prereq>
+        
+        <ArtDef>ArtDef_MeadowHunter</ArtDef>
+        <GameItemTypeArtDef InternalName="ArtDef_MeadowHunter">
+            <GameItemTypeModelPack InternalName="MeadowHunter_default">
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <IconFile>Gfx\Items\W_Shortbow_Venomous_Icon_01.dds</IconFile>
+                <AttackSFX>Hit_Bow_01</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+                <SoundPack>SoundPack_Bow</SoundPack>
+                <GameItemTypeModel>
+                    <ModelFile>FBXExport\Meshes\W_Shortbow_01.fbx</ModelFile>
+                    <Texture_All>FBXExport\Meshes\W_Shortbow_01.sdf</Texture_All>
+                    <Attachment>hand_left_Lcf</Attachment>
+                    <Scale>1</Scale>
+                </GameItemTypeModel>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Armor\K_ArcherQuiver_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Armor\K_Female_Armor_Archer_Texture_01.dds</Texture_All>
+                    <Attachment>back_Lcf</Attachment>
+                </GameItemTypeModel>
+                <ProjectileModel>W_Arrow_Projectile_01.hkb</ProjectileModel>
+                <ImpactEffect>Bloody_OnHit</ImpactEffect>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockRangedAction</Attribute>
+            <StrVal>BowAttack</StrVal>
+            <StrVal>BowAttack_Basic</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Range</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <TacticalRange>8</TacticalRange>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+    </GameItemType>
+
+    <!-- 5. RAZER'S EDGE -->
+    <GameItemType InternalName="KITH_RazersEdge">
+        <DisplayName>Razer's Edge</DisplayName>
+        <Description>A masterwork weapon firing terrifyingly sharp broadhead arrows designed to shatter armor.</Description>
+        
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponClass>Bow</WeaponClass>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HeroOnly>0</HeroOnly>
+        <IsTreasure>1</IsTreasure>
+        <ShopValue>900</ShopValue>
+        <Likelihood>25</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <CustomizationPointCost>0</CustomizationPointCost>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>3</Attribute>
+        </Prereq>
+        
+        <ArtDef>ArtDef_RazersEdge</ArtDef>
+        <GameItemTypeArtDef InternalName="ArtDef_RazersEdge">
+            <GameItemTypeModelPack InternalName="RazersEdge_default">
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <IconFile>Gfx\Items\Arrowhead_Razorfin.png</IconFile>
+                <AttackSFX>Hit_Bow_01</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+                <SoundPack>SoundPack_Bow</SoundPack>
+                <GameItemTypeModel>
+                    <ModelFile>FBXExport\Meshes\W_Crossbow_01.fbx</ModelFile>
+                    <Texture_All>FBXExport\Meshes\W_Crossbow_01.sdf</Texture_All>
+                    <Attachment>hand_left_Lcf</Attachment>
+                    <Scale>1</Scale>
+                </GameItemTypeModel>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Armor\K_ArcherQuiver_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Armor\K_Female_Armor_Archer_Texture_01.dds</Texture_All>
+                    <Attachment>back_Lcf</Attachment>
+                </GameItemTypeModel>
+                <ProjectileModel>W_Arrow_Projectile_01.hkb</ProjectileModel>
+                <ImpactEffect>Bloody_OnHit</ImpactEffect>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockRangedAction</Attribute>
+            <StrVal>BowAttack</StrVal>
+            <StrVal>BowAttack_Basic</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ArmorPierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Range</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>DeadlyBite</StrVal>
+            <Provides>Allows the wielder to strike for double normal Attack</Provides>
+        </GameModifier>		
+        <TacticalRange>8</TacticalRange>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+    </GameItemType>
+
+    <!-- 6. VAMPIRE'S KISS -->
+    <GameItemType InternalName="KITH_VampiresKiss">
+        <DisplayName>Vampire's Kiss</DisplayName>
+        <Description>A lightweight short bow tipped with barbed hooks, engineered to drain the life out of vital targets.</Description>
+        
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponClass>Bow</WeaponClass>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HeroOnly>0</HeroOnly>
+        <IsTreasure>1</IsTreasure>
+        <ShopValue>900</ShopValue>
+        <Likelihood>50</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <CustomizationPointCost>0</CustomizationPointCost>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>3</Attribute>
+        </Prereq>
+        
+        <ArtDef>ArtDef_VampiresKiss</ArtDef>
+        <GameItemTypeArtDef InternalName="ArtDef_VampiresKiss">
+            <GameItemTypeModelPack InternalName="VampiresKiss_default">
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <IconFile>Gfx\Items\W_Shortbow_Venomous_Icon_01.dds</IconFile>
+                <AttackSFX>Hit_Bow_01</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+				<OnHitParticleName>Hit_Ice1</OnHitParticleName>
+                <SoundPack>SoundPack_Bow</SoundPack>
+                <GameItemTypeModel>
+                    <ModelFile>FBXExport\Meshes\W_Shortbow_01.fbx</ModelFile>
+                    <Texture_All>FBXExport\Meshes\W_Shortbow_01.sdf</Texture_All>
+                    <Attachment>hand_left_Lcf</Attachment>
+                    <Scale>1</Scale>
+                </GameItemTypeModel>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Armor\K_ArcherQuiver_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Armor\K_Female_Armor_Archer_Texture_01.dds</Texture_All>
+                    <Attachment>back_Lcf</Attachment>
+                </GameItemTypeModel>
+                <ProjectileModel>W_Arrow_Projectile_01.hkb</ProjectileModel>
+                <ImpactEffect>Bloody_OnHit</ImpactEffect>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockRangedAction</Attribute>
+            <StrVal>BowAttack</StrVal>
+            <StrVal>BowAttack_Toxic</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>MeleeAppliesSpell</Attribute>
+            <StrVal>Reap3_Effect</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>Barbs</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack</StrVal>
+            <Value>9</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>8</Value>
+        </GameModifier>     
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Range</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <TacticalRange>8</TacticalRange>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+    </GameItemType>
+
+    <!-- 7. PEW PEW -->
+    <GameItemType InternalName="KITH_PewPew">
+        <DisplayName>Pew Pew</DisplayName>
+        <Description>A deceptively simple short bow that fires with astonishing rapidity and uncanny accuracy.</Description>
+        
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponClass>Bow</WeaponClass>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HeroOnly>0</HeroOnly>
+        <IsTreasure>1</IsTreasure>
+        <ShopValue>200</ShopValue>
+		<Likelihood>25</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+        <CustomizationPointCost>0</CustomizationPointCost>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>1</Attribute>
+        </Prereq>
+        
+        <ArtDef>ArtDef_PewPew</ArtDef>
+        <GameItemTypeArtDef InternalName="ArtDef_PewPew">
+            <GameItemTypeModelPack InternalName="PewPew_default">
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+				<IconFile>W_Shortbow_Hunters_Icon_01_Enchanted.png</IconFile>
+                <AttackSFX>Hit_Bow_01</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+                <SoundPack>SoundPack_Bow</SoundPack>
+                <GameItemTypeModel>
+                    <ModelFile>FBXExport\Meshes\W_Shortbow_01.fbx</ModelFile>
+                    <Texture_All>FBXExport\Meshes\W_Shortbow_01.sdf</Texture_All>
+                    <Attachment>hand_left_Lcf</Attachment>
+                    <Scale>.75</Scale>
+					<Color_All>255,192,203</Color_All>	
+                </GameItemTypeModel>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Armor\K_ArcherQuiver_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Armor\K_Female_Armor_Archer_Texture_01.dds</Texture_All>
+                    <Attachment>back_Lcf</Attachment>
+					<Color_All>255,192,203</Color_All>	
+                </GameItemTypeModel>
+                <ProjectileModel>W_Arrow_Projectile_01.hkb</ProjectileModel>
+                <ImpactEffect>Bloody_OnHit</ImpactEffect>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+
+        <!-- Combat Actions -->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockRangedAction</Attribute>
+            <StrVal>BowAttack</StrVal>
+            <StrVal>BowAttack_Basic</StrVal>
+        </GameModifier>
+        
+        <!-- Double Attack Ability -->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>DeadlyBite</StrVal>
+            <Provides>Allows the wielder to strike for double normal Attack</Provides>
+        </GameModifier>
+
+        <!-- Base Attack-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack</StrVal>
+            <Value>7</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>7</Value>
+        </GameModifier>
+        
+        <!-- High Bonus to Hit (Accuracy) -->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>85</Value>
+        </GameModifier>
+        
+        <!-- Speed Penalty -->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        
+        <!-- Standard Shortbow Range -->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Range</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        
+        <TacticalRange>6</TacticalRange>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+    </GameItemType>
+
+</GameItemTypes>
